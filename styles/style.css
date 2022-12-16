@@ -1,0 +1,104 @@
+html, body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+main {
+    position: absolute;
+    width: 95%;
+    margin: 0 5%;
+    padding: 50px 0px;
+}
+
+section {
+    width: 30%;
+}
+
+h1 {
+    text-align: right;
+    color: #ff6a5f;
+    font-size: 72pt;
+    font-weight: 900;
+    text-shadow: 5px 5px #fffc5f;
+}
+
+ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+  
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+}
+
+img {
+    height: 75%;
+    width: 75%;
+    object-fit: contain;
+}
+
+video {
+    padding: 5px;
+}
+
+a:link {
+    color: #5f77ff;
+}
+
+a:visited {
+    color: #5fff5f;
+}
+
+a:hover {
+    color: #fffc5f;
+    text-shadow: 3px 3px #ff6a5f;
+}
+
+.header {
+    margin-left: 5%;
+    width: 30%;
+}
+
+.nav {
+    font-size: 24pt;
+    font-weight: 900;
+    margin-left: 5%;
+    width: 40%;
+}
+
+.paragraph {
+    width: 35%;
+    margin-bottom: 16%;
+}
+
+.videogallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    object-fit: contain;
+}
+
+.imagegallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    object-fit: contain;
+}

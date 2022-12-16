@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Eliyahu Greenwald | Final Project</title>
+
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="styles/lightbox.css">
+        
+        <script src="libraries/p5.min.js"></script>
+        <script src="libraries/p5.sound.min.js"></script>
+    </head>
+
+    <body>
+        <canvas></canvas>
+        
+        <div class="header">
+            <h1>The State of 3D & AI</h1>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">TORUS</a></li>
+                <li><a href="page2.html">SPHERE</a></li>
+                <li><a href="page3.html">HANDS</a></li>
+                <li><a href="page4.html">TERRAIN</a></li>
+              </ul>
+        </div>
+
+        <main>
+            <section class="paragraph">
+                <p>
+                    This another example of 3D objects using p5.js. This time we are adding some more interactivity through the of lights and positioning. Move the mouse to illumate different parts of the animated object.
+                    <br>
+                    <br>
+                    On this page, I also added a gallery of images created using a <a href="https://colab.research.google.com/drive/1IbC6u0Icp_5JYK01j0x5Mts0AF2kFiDq" target="_blank" rel="noopener noreferrer">Stable Diffusion Notebook</a> by <a href="https://twitter.com/pharmapsychotic" target="_blank" rel="noopener noreferrer">@pharmapsychotic</a>. These served as inspiration for the videos that were used in the project. Scroll down to view the gallery and click on the thumbnails to get a larger view of them. 
+                </p>
+            </section>
+
+            <section class="imagegallery">
+                <a href="images/stablediff_image_01.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_01.png" alt="stablediff_image_01"></a>
+                <a href="images/stablediff_image_02.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_02.png" alt="stablediff_image_02"></a>
+                <a href="images/stablediff_image_03.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_03.png" alt="stablediff_image_03"></a>
+                <a href="images/stablediff_image_04.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_04.png" alt="stablediff_image_04"></a>
+                <a href="images/stablediff_image_05.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_05.png" alt="stablediff_image_05"></a>
+                <a href="images/stablediff_image_06.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_06.png" alt="stablediff_image_06"></a>
+                <a href="images/stablediff_image_07.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_07.png" alt="stablediff_image_07"></a>
+                <a href="images/stablediff_image_08.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_08.png" alt="stablediff_image_08"></a>
+                <a href="images/stablediff_image_09.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_09.png" alt="stablediff_image_09"></a>
+                <a href="images/stablediff_image_10.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_10.png" alt="stablediff_image_10"></a>
+                <a href="images/stablediff_image_11.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_11.png" alt="stablediff_image_11"></a>
+                <a href="images/stablediff_image_12.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_12.png" alt="stablediff_image_12"></a>
+                <a href="images/stablediff_image_13.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_13.png" alt="stablediff_image_13"></a>
+                <a href="images/stablediff_image_14.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_14.png" alt="stablediff_image_14"></a>
+                <a href="images/stablediff_image_15.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_15.png" alt="stablediff_image_15"></a>
+                <a href="images/stablediff_image_16.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_16.png" alt="stablediff_image_16"></a>
+                <a href="images/stablediff_image_17.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_17.png" alt="stablediff_image_17"></a>
+                <a href="images/stablediff_image_18.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_18.png" alt="stablediff_image_18"></a>
+                <a href="images/stablediff_image_19.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_19.png" alt="stablediff_image_19"></a>
+                <a href="images/stablediff_image_20.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_20.png" alt="stablediff_image_20"></a>
+                <a href="images/stablediff_image_21.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_21.png" alt="stablediff_image_21"></a>
+                <a href="images/stablediff_image_22.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_22.png" alt="stablediff_image_22"></a>
+                <a href="images/stablediff_image_23.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_23.png" alt="stablediff_image_23"></a>
+                <a href="images/stablediff_image_24.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_24.png" alt="stablediff_image_24"></a>
+                <a href="images/stablediff_image_25.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_25.png" alt="stablediff_image_25"></a>
+                <a href="images/stablediff_image_26.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_26.png" alt="stablediff_image_26"></a>
+                <a href="images/stablediff_image_27.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_27.png" alt="stablediff_image_27"></a>
+                <a href="images/stablediff_image_28.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_28.png" alt="stablediff_image_28"></a>
+                <a href="images/stablediff_image_29.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_29.png" alt="stablediff_image_29"></a>
+                <a href="images/stablediff_image_30.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_30.png" alt="stablediff_image_30"></a>
+                <a href="images/stablediff_image_31.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_31.png" alt="stablediff_image_31"></a>
+                <a href="images/stablediff_image_32.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_32.png" alt="stablediff_image_32"></a>
+                <a href="images/stablediff_image_33.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_33.png" alt="stablediff_image_33"></a>
+                <a href="images/stablediff_image_34.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_34.png" alt="stablediff_image_34"></a>
+                <a href="images/stablediff_image_35.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_35.png" alt="stablediff_image_35"></a>
+                <a href="images/stablediff_image_36.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_36.png" alt="stablediff_image_36"></a>
+                <a href="images/stablediff_image_37.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_37.png" alt="stablediff_image_37"></a>
+                <a href="images/stablediff_image_38.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_38.png" alt="stablediff_image_38"></a>
+                <a href="images/stablediff_image_39.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_39.png" alt="stablediff_image_39"></a>
+                <a href="images/stablediff_image_40.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_40.png" alt="stablediff_image_40"></a>
+                <a href="images/stablediff_image_41.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_41.png" alt="stablediff_image_41"></a>
+                <a href="images/stablediff_image_42.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_42.png" alt="stablediff_image_42"></a>
+                <a href="images/stablediff_image_43.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_43.png" alt="stablediff_image_43"></a>
+                <a href="images/stablediff_image_44.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_44.png" alt="stablediff_image_44"></a>
+                <a href="images/stablediff_image_45.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_45.png" alt="stablediff_image_45"></a>
+                <a href="images/stablediff_image_46.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_46.png" alt="stablediff_image_46"></a>
+                <a href="images/stablediff_image_47.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_47.png" alt="stablediff_image_47"></a>
+                <a href="images/stablediff_image_48.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_48.png" alt="stablediff_image_48"></a>
+                <a href="images/stablediff_image_49.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_49.png" alt="stablediff_image_49"></a>
+                <a href="images/stablediff_image_50.png" data-lightbox="stablediffusionimages
+                "><img src="images/stablediff_image_50.png" alt="stablediff_image_50"></a>
+            </section>
+        </main>
+
+        <script src="scripts/lightbox-plus-jquery.js"></script>
+
+        <script src="scripts/sketch4.js"></script>
+    </body>
+</html>
