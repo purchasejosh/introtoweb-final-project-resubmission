@@ -50,7 +50,7 @@ li a {
 }
 
 img {
-    height: 75%;
+    height: 75%;   /* these dimensions will be applied to ALL img tags using this style sheet.  Better to be more specific.  See my notes below */
     width: 75%;
     object-fit: contain;
 }
@@ -100,5 +100,16 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
+    object-fit: contain;  /* object-fit should be applied to the img that is a child of grid element */
+}
+
+/* 
+
+like this:
+
+.imagegallery img {
+    width:100%;
     object-fit: contain;
 }
+
+*/
